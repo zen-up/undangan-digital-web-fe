@@ -13,6 +13,8 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxtjs/color-mode',
         '@nuxtjs/i18n',
+        '@pinia/nuxt',
+        'pinia-plugin-persistedstate',
     ],
 
     devServer: {
@@ -142,5 +144,11 @@ export default defineNuxtConfig({
         bundle: {
             optimizeTranslationDirective: false,
         },
+    },
+
+    pinia: {
+        storesDirs: [
+            './stores/**',
+        ],
     },
 });
