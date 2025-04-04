@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/eslint',
         '@nuxtjs/tailwindcss',
+        '@nuxt/fonts',
     ],
 
     devServer: {
@@ -66,5 +67,13 @@ export default defineNuxtConfig({
     tailwindcss: {
         cssPath: '~/styles/main.scss',
         configPath: 'tailwind.config',
+    },
+
+    fonts: {
+        families: [
+            { name: 'Inter', provider: 'google' },
+            { name: 'Libre Baskerville', provider: 'google' },
+            { name: 'Lato', provider: 'google' },
+        ],
     },
 });
