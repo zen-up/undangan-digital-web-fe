@@ -24,6 +24,30 @@ export default defineNuxtConfig({
         },
     },
 
+    imports: {
+        dirs: [
+            'composables/**',
+            'models/**',
+            'types/**',
+            'services/**',
+            'endpoints/**',
+            'builders/**',
+            'constants/**',
+        ],
+    },
+
+    nitro: {
+        compressPublicAssets: true,
+    },
+
+    components: [
+        {
+            path: '~/components',
+            pathPrefix: false,
+            extensions: ['vue'],
+        },
+    ],
+
     typescript: {
         typeCheck: true,
     },
