@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         'pinia-plugin-persistedstate',
         'dayjs-nuxt',
+        '@hebilicious/vue-query-nuxt',
     ],
 
     devServer: {
