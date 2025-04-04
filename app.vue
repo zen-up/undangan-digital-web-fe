@@ -6,6 +6,10 @@ import 'nprogress/nprogress.css';
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>
+
+    <ClientOnly>
+        <VToast />
+    </ClientOnly>
 </template>
 
 <style lang="scss">

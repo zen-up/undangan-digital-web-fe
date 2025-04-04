@@ -4,3 +4,13 @@ export type PostListResponse = {
     title: string;
     body: string;
 };
+
+export type PostCreateRequest = {
+    user_id: string;
+    title: string;
+};
+
+export type PostCreateResponse = {
+    user_id: string;
+    title: string;
+};
