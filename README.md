@@ -1,41 +1,25 @@
-# Nuxt Minimal Starter
-
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
 
 Make sure to install dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
+
+## Setting Up Environment Variables
+
+To configure your Nuxt development environment, ensure you create a `.env` file in the root of your project.
+
+### Using .env.example
+
+It is recommended to use a `.env.example` file to serve as a template for environment variables in your project. This helps developers understand which variables are needed.
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:8000` (or based on the `NUXT_DEVELOPMENT_PORT` value in your `.env` file).
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +27,23 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Versioning
+
+### Committing Changes
+
+To ensure consistency in commits, use the following command:
+
+```bash
+pnpm commit
+```
+
+This will guide you through a structured commit message following Conventional Commits.
