@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxt/fonts',
         '@nuxt/icon',
+        '@nuxt/image',
     ],
 
     devServer: {
@@ -93,5 +94,31 @@ export default defineNuxtConfig({
             includeCustomCollections: true,
             sizeLimitKb: 0,
         },
+    },
+
+    image: {
+        presets: {
+            avatar: {
+                modifiers: {
+                    format: 'webp',
+                    width: 50,
+                    height: 50,
+                    fit: 'cover',
+                    quality: 50,
+                },
+            },
+        },
+        quality: 80,
+        format: ['webp'],
+        screens: {
+            'xs': 320,
+            'sm': 640,
+            'md': 768,
+            'lg': 1024,
+            'xl': 1280,
+            'xxl': 1536,
+            '2xl': 1536,
+        },
+        densities: [1, 2],
     },
 });
