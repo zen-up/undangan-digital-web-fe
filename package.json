@@ -15,7 +15,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "commit": "cz",
-        "prepare": "husky"
+        "prepare": "husky",
+        "cleanup": "pnpm dlx nuxi cleanup"
     },
     "dependencies": {
         "nuxt": "^3.16.2",
