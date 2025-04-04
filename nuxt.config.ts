@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         '@nuxt/eslint',
         '@nuxtjs/tailwindcss',
         '@nuxt/fonts',
+        '@nuxt/icon',
     ],
 
     devServer: {
@@ -48,7 +49,7 @@ export default defineNuxtConfig({
 
     components: [
         {
-            path: '~/components',
+            path: './components',
             pathPrefix: false,
             extensions: ['vue'],
         },
@@ -65,7 +66,7 @@ export default defineNuxtConfig({
     },
 
     tailwindcss: {
-        cssPath: '~/styles/main.scss',
+        cssPath: './styles/main.scss',
         configPath: 'tailwind.config',
     },
 
@@ -75,5 +76,22 @@ export default defineNuxtConfig({
             { name: 'Libre Baskerville', provider: 'google' },
             { name: 'Lato', provider: 'google' },
         ],
+    },
+
+    icon: {
+        class: 'icon',
+        mode: 'css',
+        componentName: 'NuxtIcon',
+        customCollections: [
+            {
+                prefix: 'app',
+                dir: './assets/icons',
+            },
+        ],
+        clientBundle: {
+            scan: true,
+            includeCustomCollections: true,
+            sizeLimitKb: 0,
+        },
     },
 });
