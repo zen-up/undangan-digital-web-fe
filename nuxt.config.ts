@@ -7,10 +7,11 @@ export default defineNuxtConfig({
 
     modules: [
         '@nuxt/eslint',
-        '@nuxtjs/tailwindcss',
         '@nuxt/fonts',
         '@nuxt/icon',
         '@nuxt/image',
+        '@nuxtjs/tailwindcss',
+        '@nuxtjs/color-mode',
     ],
 
     devServer: {
@@ -120,5 +121,17 @@ export default defineNuxtConfig({
             '2xl': 1536,
         },
         densities: [1, 2],
+    },
+
+    colorMode: {
+        preference: 'system',
+        fallback: 'dark',
+        hid: 'nuxt-color-mode-script',
+        globalName: '__NUXT_COLOR_MODE__',
+        componentName: 'ColorScheme',
+        classPrefix: '',
+        classSuffix: '-mode',
+        storage: 'localStorage',
+        storageKey: 'nuxt-color-mode',
     },
 });
