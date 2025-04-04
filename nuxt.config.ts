@@ -17,6 +17,8 @@ export default defineNuxtConfig({
         'pinia-plugin-persistedstate',
         'dayjs-nuxt',
         '@hebilicious/vue-query-nuxt',
+        '@vueuse/nuxt',
+        '@vee-validate/nuxt',
     ],
 
     devServer: {
@@ -159,5 +161,15 @@ export default defineNuxtConfig({
         plugins: ['relativeTime', 'utc', 'timezone'],
         defaultLocale: 'id',
         defaultTimezone: 'Asia/Jakarta',
+    },
+
+    veeValidate: {
+        autoImports: true,
+        componentNames: {
+            Form: 'VLibFormForm',
+            Field: 'VLibFormField',
+            FieldArray: 'VLibFormFieldArray',
+            ErrorMessage: 'VLibFormErrorMessage',
+        },
     },
 });
