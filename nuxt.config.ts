@@ -21,4 +21,8 @@ export default defineNuxtConfig({
         'import.meta.env.FIREBASE_APP_ID': JSON.stringify(import.meta.env.NUXT_PUBLIC_FIREBASE_APP_ID),
     },
   },
+
+  typescript: {
+    typeCheck: true
+  },
 })
