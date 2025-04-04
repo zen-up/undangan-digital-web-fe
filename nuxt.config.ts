@@ -15,6 +15,7 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
         '@pinia/nuxt',
         'pinia-plugin-persistedstate',
+        'dayjs-nuxt',
     ],
 
     devServer: {
@@ -150,5 +151,12 @@ export default defineNuxtConfig({
         storesDirs: [
             './stores/**',
         ],
+    },
+
+    dayjs: {
+        locales: ['id', 'en'],
+        plugins: ['relativeTime', 'utc', 'timezone'],
+        defaultLocale: 'id',
+        defaultTimezone: 'Asia/Jakarta',
     },
 });
