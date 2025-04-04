@@ -1,9 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
-    devtools: { enabled: true },
+    devtools: {
+        enabled: true,
+    },
 
-    modules: ['@nuxt/eslint'],
+    modules: [
+        '@nuxt/eslint',
+        '@nuxtjs/tailwindcss',
+    ],
 
     devServer: {
         port: Number.parseInt(import.meta.env.NUXT_DEVELOPMENT_PORT ?? '8000', 10),
@@ -56,5 +61,10 @@ export default defineNuxtConfig({
         config: {
             standalone: false,
         },
+    },
+
+    tailwindcss: {
+        cssPath: '~/styles/main.scss',
+        configPath: 'tailwind.config',
     },
 });
