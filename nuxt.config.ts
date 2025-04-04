@@ -19,6 +19,7 @@ export default defineNuxtConfig({
         '@hebilicious/vue-query-nuxt',
         '@vueuse/nuxt',
         '@vee-validate/nuxt',
+        '@formkit/auto-animate/nuxt',
     ],
 
     devServer: {

@@ -19,6 +19,7 @@
         "cleanup": "pnpm dlx nuxi cleanup"
     },
     "dependencies": {
+        "@formkit/auto-animate": "^0.8.2",
         "@tanstack/vue-query": "^5.71.5",
         "@vee-validate/nuxt": "^4.15.0",
         "@vuepic/vue-datepicker": "^11.0.2",
