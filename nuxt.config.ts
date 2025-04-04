@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxtjs/tailwindcss',
         '@nuxtjs/color-mode',
+        '@nuxtjs/i18n',
     ],
 
     devServer: {
@@ -133,5 +134,13 @@ export default defineNuxtConfig({
         classSuffix: '-mode',
         storage: 'localStorage',
         storageKey: 'nuxt-color-mode',
+    },
+
+    i18n: {
+        vueI18n: './i18n.config.ts',
+        defaultLocale: 'id',
+        bundle: {
+            optimizeTranslationDirective: false,
+        },
     },
 });

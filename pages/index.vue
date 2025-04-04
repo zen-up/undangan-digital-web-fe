@@ -1,5 +1,3 @@
 <template>
-    <p>
-        Hello, World!
-    </p>
+    <p>{{ $t('welcome') }}</p>
 </template>

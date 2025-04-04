@@ -124,5 +124,6 @@
         "vuepic",
         "vueuse",
         "zenup"
-    ]
+    ],
+    "i18n-ally.keystyle": "nested"
 }
