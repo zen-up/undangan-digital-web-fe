@@ -57,6 +57,7 @@
         "@nuxtjs/tailwindcss": "^6.13.2",
         "@pinia/nuxt": "^0.10.1",
         "@tailwindcss/typography": "^0.5.16",
+        "@types/js-yaml": "^4.0.9",
         "@types/nprogress": "^0.2.3",
         "@vueuse/core": "^13.0.0",
         "@vueuse/nuxt": "^13.0.0",
@@ -67,9 +68,9 @@
         "eslint": "^9.23.0",
         "eslint-plugin-format": "^1.0.1",
         "husky": "^9.1.7",
+        "js-yaml": "^4.1.0",
         "lint-staged": "^15.5.0",
         "sass-embedded": "^1.86.3",
-        "tailwindcss-animate": "^1.0.7",
         "typescript": "^5.8.2",
         "vue-tsc": "^2.2.8"
     },
